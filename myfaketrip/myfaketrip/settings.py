@@ -31,7 +31,7 @@ SECRET_KEY = 'btz@f-sp(h^38kix7-%yw(_#igsjp*z#u)h^n=rjf8bo%e(+a#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account',
+    'product'
 ]
 
 MIDDLEWARE = [
@@ -118,6 +120,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+APPEND_SLASH=False
 
 
 # Static files (CSS, JavaScript, Images)
