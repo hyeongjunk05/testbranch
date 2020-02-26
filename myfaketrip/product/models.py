@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class Product(models.Model):
 
     main_theme = models.ForeignKey('MainTheme', on_delete = models.CASCADE)
